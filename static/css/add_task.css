@@ -1,0 +1,123 @@
+section{
+    padding: 100px 200px;
+    color: rgba(17, 10, 10,95%);
+
+}
+
+h2,h3{
+    color: brown;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+
+form{
+    display: table;
+    background-color: rgba(0,0,0,100%);
+    color: brown;
+    left: 50%;
+    padding: 20px;
+    margin: 5px auto;
+    border: 2px solid rgba(155, 17, 30, 100%);
+    border-radius: 30px 0px;
+    
+}
+.title{
+    display: table-row;
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+input::placeholder{
+    text-align: center;
+    
+}
+
+
+.disc{
+    display: table-row;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+.back{
+    text-decoration: none;
+    padding: 6px;
+
+    font-size: 1.4em;
+    font-weight: 600;
+    color:rgba(155, 17, 30, 100%) ;
+}
+.back:hover{
+    color:rgba(255, 17, 30, 100%); ;
+}
+.status{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 3px;
+}
+.choose{
+    padding-right: 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+input[type="date"]{
+    background-color:rgba(200, 17, 30, 100%) ;
+    color:black;
+    font-size: 1em;
+    font-weight: 500;
+    width: 250px;
+    padding: 0 50px;
+    margin: 0 25px;
+    border-radius: 5px;
+  
+}
+
+.important{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 3px;
+}
+
+.choose1{
+    padding-right: 35px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.deadline{
+    text-align: center;
+   
+}
+
+.submit{
+    text-align: center;
+}
+.btn_add{
+    font-size: 1.1em;
+    font-weight: 550;
+    width: 100px;
+    border: 2px solid rgba(155, 17, 30, 100%);
+    border-radius: 0 5px;
+    background-color:rgba(17, 10, 10,95%) ;
+    color:rgba(155, 17, 30, 100%);
+    transition: 0.7s;
+}
+
+.btn_add:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,15 @@
+.all{
+    color:rgba(255, 17, 30, 100%);
+    font-size: 1.25em;
+    
+}
+.task{
+    display: table;
+    background-color: rgba(0,0,0,100%);
+    color: brown;
+    width:550px;
+    padding: 20px;
+    margin: 5px auto;
+    border: 2px solid rgba(155, 17, 30, 100%);
+   
+}

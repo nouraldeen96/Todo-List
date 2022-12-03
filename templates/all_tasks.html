@@ -1,0 +1,10 @@
+{%extends 'base.html' %}
+{% block body %} 
+
+{% for task in row %}
+<div class=task>
+    {{task[0]}}  {{task[1]}}  {{task[2]}}  {{task[3]}}  {{task[4]}}
+</div>
+{%endfor%}
+
+{% endblock %}

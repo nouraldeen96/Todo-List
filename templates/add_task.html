@@ -1,0 +1,77 @@
+{%extends 'base.html' %}
+{%block body%}
+<h2> New Task</h2>
+<form action="/save_task" method="post">
+    
+    <div>
+        <div>
+            <input class=title type="text" required name="title" placeholder="task title"/>
+            <br>
+        </div>
+        <div> 
+            <input class=disc type="text" placeholder="Discription" name="discription"/>
+        </div>
+      
+      
+        <div class="status">
+            <div>
+                <input  id="todo" type="radio" name="status" value="todo" checked/>
+                <lable  class=choose for="todo"> Todo </lable>  
+            </div>
+            
+            <div>
+                <input  id="progress" type="radio" name="status" value="progress"/>
+                <lable class=choose  for="progress"> Progress </lable>  
+            </div>
+            <div>
+                <input  id="done" type="radio" name="status" value="done"/>
+                <lable class=choose for="done"> Done </lable>  
+            </div>
+        </div>
+        <br>
+        <br>
+    
+        <div class=deadline>
+            <lable class=deadline> Deadline </lable>
+        </div>  
+        <div>
+            <input type="date" value="date" name="deadline"/>
+            <!-- <input type="time" value="time"/>  -->
+        </div>
+    
+        
+        <div class= important>
+            <div>
+                <input id="high" type="radio" name="important" value="high" checked/>
+                <lable  class=choose1 for="high"> High </lable>  
+            </div>
+            <div>
+                <input id="medium" type="radio" name="important" value="medium"/>
+                <lable class=choose1 for="medium"> Medium </lable>  
+            </div>
+        
+            <div>
+                
+                <input id="low" type="radio" name="important" value="low"/>
+                <lable class=choose1 for="low"> Low </lable>  
+            </div>
+        </div>
+        <br><br><br>
+        <div class="submit">
+            <input class="btn_add" type="submit" value="Add Task">     
+        </div>
+      
+        
+        
+       
+        
+    </form>
+
+<h3>{{msg}}</h3> 
+<div class="border">
+    <a href="/" class="back" title="Back To Home">Back</a> 
+</div>    
+{%endblock%} 
+    
+    
+   
